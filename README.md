@@ -37,7 +37,7 @@ Docker (opsiyonel)
 
 ```bash
 # Depoyu klonla
-git clone https://github.com/yourusername/test-data-api.git
+git clone https://github.com/TurkerAlbayrak/fastapi-test-data-generator-api.git
 
 # Virtual environment oluştur
 python -m venv venv
