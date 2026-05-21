@@ -1,0 +1,1 @@
+python -m uvicorn test_data_api_main:app --reload --host 127.0.0.1 --port 8000
