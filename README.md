@@ -1,8 +1,8 @@
-# 🚀 Test Data Generation API
+# Test Data Generation API
 
 Geliştiriciler için **rastgele test verileri** üreten açık kaynak API. Web sitesi, mobil uygulama ve herhangi bir ürünün test aşamasında ihtiyaç duyulan veriye hızlı erişim sağlar.
 
-## ✨ Özellikler
+## Özellikler
 
 - **5+ Veri Türü**: Kullanıcı, Ürün, Sipariş, Adres, Şirket
 - **Çoklu Format Desteği**: JSON, CSV, XML
@@ -13,7 +13,7 @@ Geliştiriciler için **rastgele test verileri** üreten açık kaynak API. Web 
 - **Açık Kaynak**: MIT Lisansı
 - **Otomatik Docs**: Swagger/OpenAPI
 
-## 🛠️ Teknik Stack
+## Teknik Stack
 
 ```
 Backend:        FastAPI + Python 3.11
@@ -23,9 +23,9 @@ Test:           Pytest
 API Docs:       Swagger UI / ReDoc
 ```
 
-## 📦 Kurulum
+## Kurulum
 
-### 1️⃣ Ön Koşullar
+### Ön Koşullar
 
 ```bash
 Python 3.10+
@@ -33,7 +33,7 @@ pip
 Docker (opsiyonel)
 ```
 
-### 2️⃣ Lokal Kurulum
+### Lokal Kurulum
 
 ```bash
 # Depoyu klonla
@@ -51,7 +51,7 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
-### 3️⃣ API'yi Başlat
+### API'yi Başlat
 
 ```bash
 # Uvicorn ile çalıştır
@@ -63,7 +63,7 @@ python test_data_api_main.py
 
 API şu adreste erişilebilir olacak: **http://localhost:8000**
 
-### 4️⃣ Docker ile Kurulum (Opsiyonel)
+### Docker ile Kurulum (Opsiyonel)
 
 ```bash
 # Build et
@@ -76,20 +76,20 @@ docker-compose up
 docker-compose up -d
 ```
 
-## 📚 API Kullanımı
+## API Kullanımı
 
-### 🔗 API Base URL
+### API Base URL
 ```
 http://localhost:8000/api/v1
 ```
 
-### 📖 Otomatik Dokümantasyon
+### Otomatik Dokümantasyon
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
 ---
 
-## 👥 Kullanıcı Veri Üretimi
+## Kullanıcı Veri Üretimi
 
 ### Basit İstek
 
@@ -161,7 +161,7 @@ generateUsers();
 
 ---
 
-## 📦 Ürün Veri Üretimi
+## Ürün Veri Üretimi
 
 ```bash
 # 50 adet ürün üret
@@ -181,7 +181,7 @@ Automotive, Office Supplies
 
 ---
 
-## 🛒 Sipariş Veri Üretimi
+## Sipariş Veri Üretimi
 
 ```bash
 # 25 adet sipariş üret
@@ -197,7 +197,7 @@ curl "http://localhost:8000/api/v1/orders?count=100&format=csv" \
 
 ---
 
-## 🏢 Şirket Veri Üretimi
+## Şirket Veri Üretimi
 
 ```bash
 # 15 adet şirket üret
@@ -209,7 +209,7 @@ curl "http://localhost:8000/api/v1/companies?count=10&industry=Technology&format
 
 ---
 
-## 🌍 Adres Veri Üretimi
+## Adres Veri Üretimi
 
 ```bash
 # Türkiye'de adresler
@@ -221,7 +221,7 @@ curl "http://localhost:8000/api/v1/addresses?count=20&country=US&locale=en_US"
 
 ---
 
-## 🎯 Eksiksiz Veri Seti Üretimi
+## Eksiksiz Veri Seti Üretimi
 
 Tek bir istekle kullanıcı, ürün ve siparişleri birlikte üret:
 
@@ -246,7 +246,7 @@ curl "http://localhost:8000/api/v1/complete-dataset?user_count=50&product_count=
 
 ---
 
-## 📊 Batch Veri Üretimi
+## Batch Veri Üretimi
 
 Farklı konfigürasyonlarla birden fazla veri seti üret:
 
@@ -264,7 +264,7 @@ curl -X POST "http://localhost:8000/api/v1/users/batch" \
 
 ---
 
-## 🔍 API Yanıtları
+## API Yanıtları
 
 ### Başarılı Yanıt (200)
 
@@ -307,7 +307,7 @@ curl -X POST "http://localhost:8000/api/v1/users/batch" \
 
 ---
 
-## 🧪 Test Çalıştırma
+## Test Çalıştırma
 
 ```bash
 # Tüm testleri çalıştır
@@ -322,7 +322,7 @@ pytest --cov=app --cov-report=html
 
 ---
 
-## 📝 Kullanım Örnekleri
+## Kullanım Örnekleri
 
 ### React Projesinde
 
@@ -438,7 +438,7 @@ void main() async {
 
 ---
 
-## 🏗️ Proje Yapısı
+## Proje Yapısı
 
 ```
 test-data-api/
@@ -452,7 +452,7 @@ test-data-api/
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Heroku'ya Deploy Etme
 
@@ -504,7 +504,7 @@ railway up
 
 ---
 
-## 🔐 Güvenlik
+## Güvenlik
 
 - **CORS**: Tüm originlerden istek kabul (prod'da kısıtla)
 - **Rate Limiting**: Gelecek versiyonda eklenecek
@@ -526,7 +526,7 @@ railway up
 
 ---
 
-## 📊 Performance
+## Performance
 
 - **Response Time**: < 100ms (10-1000 kayıt)
 - **Memory Usage**: ~50MB (idle)
@@ -535,7 +535,7 @@ railway up
 
 ---
 
-## 🤝 Katkıda Bulunma
+## Katkıda Bulunma
 
 Katkılarınız hoşgeldiniz! Lütfen şu adımları izleyin:
 
@@ -562,20 +562,15 @@ git push origin feature/amazing-feature
 
 ---
 
-## 📝 License
 
-MIT License - bkz. LICENSE dosyası
-
----
-
-## 💬 İletişim
+## İletişim
 
 - **Issues**: GitHub Issues aracılığıyla
 - **Discussions**: GitHub Discussions
 - **Email**: turkeralb@gmail.com
 ---
 
-## 📚 Kaynaklar
+## Kaynaklar
 
 - [FastAPI Dokümantasyonu](https://fastapi.tiangolo.com/)
 - [Faker Dokümantasyonu](https://faker.readthedocs.io/)
@@ -584,7 +579,7 @@ MIT License - bkz. LICENSE dosyası
 
 ---
 
-## ⭐ Starlamayı Unutma!
+## Starlamayı Unutma!
 
 Bu proje sana yardımcı olduysa, lütfen bir yıldız ver! ⭐
 
